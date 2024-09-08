@@ -140,7 +140,7 @@ function App() {
             sx={{
               background: "#1b1a1c",
               width: "100vw",
-              height: "80vh",
+              height: "100vh",
               padding: 5,
             }}
           >
