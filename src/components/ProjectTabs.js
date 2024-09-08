@@ -73,9 +73,7 @@ export default function FullWidthTabs() {
         <Box display={"flex"} flexDirection={"row"}>
           <Typography width={350} margin={"auto"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
           {/* <img src={projectthumb} height={200}></img> */}
         </Box>
@@ -84,9 +82,7 @@ export default function FullWidthTabs() {
         <Box display={"flex"} flexDirection={"row"}>
           <Typography width={350} margin={"auto"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
           {/* <img src={projectthumb2} height={200}></img> */}
         </Box>
@@ -95,9 +91,7 @@ export default function FullWidthTabs() {
         <Box display={"flex"} flexDirection={"row"}>
           <Typography width={350} margin={"auto"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
           {/* <img src={projectthumb3} height={200}></img> */}
         </Box>
