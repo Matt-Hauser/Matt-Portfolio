@@ -9,7 +9,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
-import { grey } from "@mui/material/colors";
+
 import SendIcon from "@mui/icons-material/Send";
 
 import MenuIcon from "@mui/icons-material/Menu";
@@ -74,7 +74,7 @@ export const NavBar = () => {
               }}
               xs={4}
             >
-              <img height={55} src={mattlogo} />
+              <img alt="matt hauser logo" height={55} src={mattlogo} />
             </Grid>
             <Grid item xs={5}>
               <Box

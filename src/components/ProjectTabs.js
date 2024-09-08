@@ -1,8 +1,5 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import projectthumb from "../images/projectthumb.png";
-import projectthumb2 from "../images/projectthumb2.png";
-import projectthumb3 from "../images/projectthumb3.jpeg";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
@@ -50,10 +47,6 @@ export default function FullWidthTabs() {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-  };
-
-  const handleChangeIndex = (index) => {
-    setValue(index);
   };
 
   return (
