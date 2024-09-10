@@ -50,10 +50,12 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", width: "90%", margin: 4 }}>
+    <Box sx={{ width: "90%", margin: 4 }}>
       <AppBar
         position="static"
-        sx={{ background: "linear-gradient(to right, #c31432, #240b36)" }}
+        sx={{
+          background: "linear-gradient(to right, #c31432, #240b36)",
+        }}
       >
         <Tabs
           value={value}
@@ -71,27 +73,27 @@ export default function FullWidthTabs() {
 
       <TabPanel value={value} index={0} dir={theme.direction}>
         <Box display={"flex"} flexDirection={"row"}>
-          <Typography width={350} margin={"auto"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <Typography sx={{ color: "white" }} width={350} margin={"auto"}>
+            Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
           {/* <img src={projectthumb} height={200}></img> */}
         </Box>
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
         <Box display={"flex"} flexDirection={"row"}>
-          <Typography width={350} margin={"auto"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <Typography sx={{ color: "white" }} width={350} margin={"auto"}>
+            Lorem ipsum labore dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Typography>
           {/* <img src={projectthumb2} height={200}></img> */}
         </Box>
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
         <Box display={"flex"} flexDirection={"row"}>
-          <Typography width={350} margin={"auto"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <Typography sx={{ color: "white" }} width={350} margin={"auto"}>
+            Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
           </Typography>
           {/* <img src={projectthumb3} height={200}></img> */}
         </Box>

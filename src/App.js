@@ -6,7 +6,9 @@ import React from "react";
 import { Box, Button, Grid, Paper, Typography } from "@mui/material";
 
 import "./App.css";
-
+import JavascriptIcon from "@mui/icons-material/Javascript";
+import HtmlIcon from "@mui/icons-material/Html";
+import CssIcon from "@mui/icons-material/Css";
 import SendIcon from "@mui/icons-material/Send";
 import ProjectTabs from "./components/ProjectTabs.js";
 
@@ -19,6 +21,7 @@ function App() {
         style={{
           backgroundImage: `url(${nightsky})`,
           height: "850px",
+
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
@@ -26,7 +29,7 @@ function App() {
         <Grid container>
           <Grid item xs={12} height={120}></Grid>
         </Grid>
-        <Grid container sx={{ maxWidth: "90%", margin: "auto" }}>
+        <Grid container sx={{ maxWidth: "95%", margin: "auto" }}>
           <Grid item xs={12} height={40}></Grid>
           <Grid
             item
@@ -55,6 +58,8 @@ function App() {
               fontWeight={700}
               fontSize={60}
               textAlign={"center"}
+              lineHeight={1}
+              padding={2}
             >
               I'm Matt Hauser
             </Typography>
@@ -63,6 +68,8 @@ function App() {
               fontWeight={700}
               fontSize={15}
               textAlign={"center"}
+              marginTop={1}
+              padding={2}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -90,23 +97,23 @@ function App() {
             <img
               alt="astronaut"
               className="astronaut"
-              height={400}
+              //height={370}
+              width={"80%"}
               src={skydiver}
             />
           </Grid>
         </Grid>
         <Grid container sx={{ maxWidth: "90%", margin: "auto" }}>
-          <Grid item xs={"none"} sm={12} height={"30vh"}></Grid>
+          <Grid item xs={"none"} sm={12} height={"20vh"}></Grid>
           <Grid item xs={12}>
             <Box
               //border={5}
-              height={400}
+
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
             >
               <Box
-                height={350}
                 width={"80vw"}
                 borderRadius={10}
                 bgcolor={"#1b1a1c"}
@@ -128,6 +135,21 @@ function App() {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.
                 </Typography>
+                <Box
+                  display={"flex"}
+                  justifyContent={"center"}
+                  flexWrap={"wrap"}
+                >
+                  <JavascriptIcon
+                    sx={{ height: "100px", width: "250px", color: "gold" }}
+                  />
+                  <HtmlIcon
+                    sx={{ height: "100px", width: "250px", color: "gold" }}
+                  />
+                  <CssIcon
+                    sx={{ height: "100px", width: "250px", color: "gold" }}
+                  />
+                </Box>
               </Box>
             </Box>
           </Grid>
@@ -139,8 +161,7 @@ function App() {
             xs={12}
             sx={{
               background: "#1b1a1c",
-              width: "100vw",
-              height: "100vh",
+
               padding: 5,
             }}
           >
@@ -176,6 +197,7 @@ function App() {
           height: "1200px",
         }}
       ></Box>
+      <Box></Box>
     </div>
   );
 }
