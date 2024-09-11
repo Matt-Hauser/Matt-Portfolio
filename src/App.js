@@ -13,12 +13,29 @@ import Home from "./components/HomeSection.js";
 import Projects from "./components/ProjectsSection.js";
 import Contact from "./components/ContactSection.js";
 import mattlogo from "./images/mattlogow.png";
+import { useRef } from "react";
 function App() {
+  const homeRef = useRef(null);
+  const skillRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const homeScroll = () => homeRef.current.scrollIntoView();
+  const skillScroll = () => skillRef.current.scrollIntoView();
+  const projectScroll = () => projectRef.current.scrollIntoView();
+  const contactScroll = () => contactRef.current.scrollIntoView();
+
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar
+        homeScroll={homeScroll}
+        skillScroll={skillScroll}
+        projectScroll={projectScroll}
+        contactScroll={contactScroll}
+      ></NavBar>
 
       <Box
+        ref={homeRef}
         style={{
           backgroundImage: `url(${nightsky})`,
           height: "950px",
@@ -28,20 +45,33 @@ function App() {
         }}
       >
         <Grid container xs={12} height={110}></Grid>
-        <Home></Home>
+        <Home contactScroll={contactScroll}></Home>
       </Box>
       <Box
         sx={{
           background: "linear-gradient(to top, #240b36, #c31432, #240b36)",
         }}
       >
-        <Box marginBottom={10}>
+        <Box ref={skillRef}>
           <Grid container xs={12} height={100}></Grid>
           <Skills></Skills>
         </Box>
+        <Grid container ref={projectRef}>
+          <Grid container xs={12} height={100}></Grid>
+          <Grid
+            item
+            xs={12}
+            sx={{
+              background: "#1b1a1c",
 
-        <Projects></Projects>
-        <Box marginTop={5}></Box>
+              padding: 5,
+            }}
+          >
+            <Projects></Projects>
+          </Grid>
+        </Grid>
+
+        <Grid container xs={12} height={110}></Grid>
         <Contact></Contact>
         <Grid
           container
@@ -54,7 +84,7 @@ function App() {
           <Grid item marginTop={1}>
             <img alt="matt hauser logo" width={190} src={mattlogo} />
           </Grid>
-          <Grid item>
+          <Grid ref={contactRef} item>
             <LinkedInIcon
               sx={{ fontSize: "35px", color: "white", marginRight: "10px" }}
             />

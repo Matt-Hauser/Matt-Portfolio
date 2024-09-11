@@ -53,11 +53,12 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box sx={{ width: "90%", margin: 4 }}>
+    <Box sx={{ width: "95%", margin: 2 }}>
       <AppBar
         position="static"
         sx={{
           background: "linear-gradient(to bottom, #c31432, #240b36)",
+          borderRadius: "2%, 4%",
         }}
       >
         <Tabs
@@ -68,9 +69,17 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Tic Tac Toe" {...a11yProps(0)} />
-          <Tab label="Pokedex" {...a11yProps(1)} />
-          <Tab label="Chat Room" {...a11yProps(2)} />
+          <Tab
+            sx={{ fontFamily: "Kanit" }}
+            label="Tic Tac Toe"
+            {...a11yProps(0)}
+          />
+          <Tab sx={{ fontFamily: "Kanit" }} label="Pokedex" {...a11yProps(1)} />
+          <Tab
+            sx={{ fontFamily: "Kanit" }}
+            label="Chat Room"
+            {...a11yProps(2)}
+          />
         </Tabs>
       </AppBar>
 

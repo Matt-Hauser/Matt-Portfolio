@@ -8,6 +8,8 @@ import {
   IconButton,
   createTheme,
   ThemeProvider,
+  Menu,
+  MenuItem,
 } from "@mui/material";
 
 import SendIcon from "@mui/icons-material/Send";
@@ -37,8 +39,22 @@ const theme = createTheme({
   },
 });
 
-export const NavBar = () => {
+export const NavBar = ({
+  homeScroll,
+  skillScroll,
+  projectScroll,
+  contactScroll,
+}) => {
   const [scrolled, setScrolled] = useState(false);
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -84,17 +100,29 @@ export const NavBar = () => {
                   justifyContent: "flex-end",
                 }}
               >
-                <Button variant="text" sx={{ color: "white" }}>
+                <Button
+                  onClick={homeScroll}
+                  variant="text"
+                  sx={{ color: "white" }}
+                >
                   <Typography fontWeight={700} fontSize={15}>
                     Home
                   </Typography>
                 </Button>
-                <Button variant="text" sx={{ color: "white" }}>
+                <Button
+                  onClick={skillScroll}
+                  variant="text"
+                  sx={{ color: "white" }}
+                >
                   <Typography fontWeight={700} fontSize={15}>
                     Skills
                   </Typography>
                 </Button>
-                <Button variant="text" sx={{ color: "white" }}>
+                <Button
+                  onClick={projectScroll}
+                  variant="text"
+                  sx={{ color: "white" }}
+                >
                   <Typography fontWeight={700} fontSize={15}>
                     Projects
                   </Typography>
@@ -112,9 +140,56 @@ export const NavBar = () => {
               xs={2}
             >
               <Box>
-                <IconButton>
+                <IconButton
+                  aria-controls={open ? "basic-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={open ? "true" : undefined}
+                  onClick={handleClick}
+                >
                   <MenuIcon sx={{ color: "white" }} fontSize="large" />
                 </IconButton>
+                <Menu
+                  id="basic-menu"
+                  anchorEl={anchorEl}
+                  open={open}
+                  onClose={handleClose}
+                  MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                  }}
+                >
+                  <MenuItem
+                    onClick={() => {
+                      handleClose();
+                      homeScroll();
+                    }}
+                  >
+                    Home
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() => {
+                      handleClose();
+                      skillScroll();
+                    }}
+                  >
+                    Skills
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() => {
+                      handleClose();
+                      projectScroll();
+                    }}
+                  >
+                    Projects
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() => {
+                      handleClose();
+                      contactScroll();
+                    }}
+                  >
+                    Contact Me
+                  </MenuItem>
+                </Menu>
               </Box>
             </Grid>
             <Box
@@ -126,6 +201,7 @@ export const NavBar = () => {
               }}
             >
               <Button
+                onClick={contactScroll}
                 variant="outlined"
                 disableElevation
                 endIcon={<SendIcon />}

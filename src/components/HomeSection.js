@@ -4,7 +4,7 @@ import skydiver from "../images/skydiver.png";
 
 import React from "react";
 
-export default function Home() {
+export default function Home({ contactScroll }) {
   return (
     <Grid container sx={{ maxWidth: "95%", margin: "auto" }}>
       <Grid item xs={12} height={40}></Grid>
@@ -61,6 +61,7 @@ export default function Home() {
           aliquip ex ea commodo consequat.
         </Typography>
         <Button
+          onClick={contactScroll}
           variant="outlined"
           disableElevation
           endIcon={<SendIcon />}
