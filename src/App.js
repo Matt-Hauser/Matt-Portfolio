@@ -14,6 +14,7 @@ import Projects from "./components/ProjectsSection.js";
 import Contact from "./components/ContactSection.js";
 import mattlogo from "./images/mattlogow.png";
 import { useRef } from "react";
+
 function App() {
   const homeRef = useRef(null);
   const skillRef = useRef(null);
@@ -44,7 +45,14 @@ function App() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <Grid container xs={12} height={110}></Grid>
+        <Grid container xs={12} height={90}></Grid>
+        <Box
+          sx={{
+            display: { xs: "none", sm: "block" },
+          }}
+        >
+          <Grid md={12} height={100}></Grid>
+        </Box>
         <Home contactScroll={contactScroll}></Home>
       </Box>
       <Box

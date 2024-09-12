@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "title": "Javascript"
+  },
+  {
+    "id": 2,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg",
+    "title": "CSS"
+  },
+  {
+    "id": 3,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg",
+    "title": "HTML"
+  },
+  {
+    "id": 4,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "title": "React"
+  },
+  {
+    "id": 5,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+    "title": "Redux"
+  },
+  {
+    "id": 6,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+    "title": "Typescript"
+  }
+]

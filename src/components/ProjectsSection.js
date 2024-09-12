@@ -25,10 +25,10 @@ export default function Projects() {
         fontSize={20}
         fontWeight={300}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        My goal is to build engaging and dynamic web applications, focusing on
+        creating responsive and user-friendly interfaces. I effectively managed
+        application state and integrated various APIs to enhance functionality,
+        ensuring smooth performance across different devices.
       </Typography>
       <ProjectTabs></ProjectTabs>
     </Box>

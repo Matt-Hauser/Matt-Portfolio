@@ -58,7 +58,6 @@ export default function FullWidthTabs() {
         position="static"
         sx={{
           background: "linear-gradient(to bottom, #c31432, #240b36)",
-          borderRadius: "2%, 4%",
         }}
       >
         <Tabs
@@ -84,29 +83,63 @@ export default function FullWidthTabs() {
       </AppBar>
 
       <TabPanel value={value} index={0} dir={theme.direction}>
-        <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-          {/* <Typography sx={{ color: "white" }} width={350} margin={"auto"}>
+        <Box
+          display={"flex"}
+          flexDirection={"row"}
+          justifyContent={"center"}
+          rowGap={5}
+          flexWrap={"wrap"}
+        >
+          <Typography
+            sx={{ color: "lightgrey" }}
+            width={350}
+            margin={"auto"}
+            fontFamily={"Kanit"}
+          >
             Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua.
-          </Typography> */}
+          </Typography>
           <img alt="project1" src={projectthumb} height={200}></img>
         </Box>
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
-        <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-          {/* <Typography sx={{ color: "white" }} width={350} margin={"auto"}>
+        <Box
+          display={"flex"}
+          flexDirection={"row"}
+          justifyContent={"center"}
+          rowGap={5}
+          flexWrap={"wrap"}
+        >
+          <Typography
+            sx={{ color: "lightgrey" }}
+            width={350}
+            margin={"auto"}
+            fontFamily={"Kanit"}
+          >
             Lorem ipsum labore dolor sit amet, consectetur adipiscing elit, sed
             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </Typography> */}
+          </Typography>
           <img alt="project2" src={projectthumb2} height={200}></img>
         </Box>
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
-        <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-          {/* <Typography sx={{ color: "white" }} width={350} margin={"auto"}>
+        <Box
+          fontFamily={"Kanit"}
+          display={"flex"}
+          flexDirection={"row"}
+          justifyContent={"center"}
+          rowGap={5}
+          flexWrap={"wrap"}
+        >
+          <Typography
+            sx={{ color: "lightgrey" }}
+            width={350}
+            margin={"auto"}
+            fontFamily={"Kanit"}
+          >
             Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
-          </Typography> */}
+          </Typography>
           <img alt="project3" src={projectthumb3} height={200}></img>
         </Box>
       </TabPanel>

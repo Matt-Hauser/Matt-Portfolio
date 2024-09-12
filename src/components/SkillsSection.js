@@ -1,7 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import JavascriptIcon from "@mui/icons-material/Javascript";
-import HtmlIcon from "@mui/icons-material/Html";
-import CssIcon from "@mui/icons-material/Css";
+import SkillsCar from "./Carousel.js";
 import React from "react";
 
 export default function Skills() {
@@ -38,21 +36,15 @@ export default function Skills() {
               fontSize={20}
               fontWeight={300}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              I am skilled in JavaScript and the React.js library, with a solid
+              understanding of HTML and CSS. I have hands-on experience with
+              modern libraries and frameworks like Redux for state management,
+              Axios for handling API requests, and TypeScript for enhancing code
+              quality and reliability.
             </Typography>
-            <Box display={"flex"} justifyContent={"center"} flexWrap={"wrap"}>
-              <JavascriptIcon
-                sx={{ height: "100px", width: "250px", color: "gold" }}
-              />
-              <HtmlIcon
-                sx={{ height: "100px", width: "250px", color: "gold" }}
-              />
-              <CssIcon
-                sx={{ height: "100px", width: "250px", color: "gold" }}
-              />
+
+            <Box marginTop={5}>
+              <SkillsCar></SkillsCar>
             </Box>
           </Box>
         </Box>

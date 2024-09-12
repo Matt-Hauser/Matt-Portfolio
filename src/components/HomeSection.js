@@ -7,7 +7,7 @@ import React from "react";
 export default function Home({ contactScroll }) {
   return (
     <Grid container sx={{ maxWidth: "95%", margin: "auto" }}>
-      <Grid item xs={12} height={40}></Grid>
+      <Grid item xs={12} height={20}></Grid>
       <Grid
         item
         xs={12}
@@ -47,18 +47,18 @@ export default function Home({ contactScroll }) {
           I'm Matt Hauser
         </Typography>
         <Typography
-          color="lightgrey"
+          color="whitesmoke"
           fontWeight={500}
           fontSize={18}
           textAlign={"center"}
-          marginTop={1}
+          marginTop={0}
           padding={2}
           fontFamily={"Kanit"}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          I am a self-taught programmer who specializes in front-end web
+          development. My experience in programming has been focused on
+          Javascript and the React.js library. I also have some limited
+          experience with back-end including Node.js and MongoDB.
         </Typography>
         <Button
           onClick={contactScroll}
@@ -66,7 +66,7 @@ export default function Home({ contactScroll }) {
           disableElevation
           endIcon={<SendIcon />}
           color={"white"}
-          sx={{ color: "white", borderWidth: "2px", margin: 4 }}
+          sx={{ color: "white", borderWidth: "2px", margin: 1 }}
         >
           <Typography fontWeight={700} fontSize={20}>
             Contact Me
